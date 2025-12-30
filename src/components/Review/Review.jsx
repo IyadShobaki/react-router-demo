@@ -1,7 +1,8 @@
+import { useParams, useNavigate } from "react-router-dom";
 import "./Review.css";
-import { useParams } from "react-router-dom";
 
 function Review({ reviews }) {
+  const navigate = useNavigate();
   const params = useParams();
   let id = params.reviewId;
   // Decrement the id from the parameter so we access the correct items. This
@@ -17,6 +18,10 @@ function Review({ reviews }) {
           <p className="review__rating">
             Final rating: {reviews[id]?.rating}/5
           </p>
+          {/* We can use ()=> navigate(-1) if we need to go back to the previous location */}
+          <button onClick={() => navigate("/reviews")} type="button">
+            Back to the review list
+          </button>
         </div>
       )}
     </div>
