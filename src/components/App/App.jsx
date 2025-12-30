@@ -14,6 +14,7 @@ import SiteHistory from "../AboutUs/SiteHistory";
 import SiteMission from "../AboutUs/SiteMission";
 import PageNotFound from "../PageNotFound/PageNotFound";
 import "./App.css";
+import LiftStateExample from "../LiftStateExample/LiftStateExample";
 function App() {
   const [reviews, setReviews] = useState([]);
 
@@ -52,6 +53,7 @@ function App() {
           <Route path="history" element={<SiteHistory />} />
           <Route path="mission" element={<SiteMission />} />
         </Route>
+        <Route path="/lift-state" element={<LiftStateExample />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </div>

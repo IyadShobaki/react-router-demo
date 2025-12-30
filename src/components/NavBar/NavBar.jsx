@@ -19,6 +19,9 @@ function NavBar() {
       <NavLink to="/about-us" className={customClassName}>
         About Us
       </NavLink>
+      <NavLink to="/lift-state" className={customClassName}>
+        LiftState
+      </NavLink>
     </nav>
   );
 }
