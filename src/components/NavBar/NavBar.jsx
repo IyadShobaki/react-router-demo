@@ -22,6 +22,9 @@ function NavBar() {
       <NavLink to="/lift-state" className={customClassName}>
         LiftState
       </NavLink>
+      <NavLink to="/stopwatch" className={customClassName}>
+        Stopwatch
+      </NavLink>
     </nav>
   );
 }

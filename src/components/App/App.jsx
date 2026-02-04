@@ -15,6 +15,7 @@ import SiteMission from "../AboutUs/SiteMission";
 import PageNotFound from "../PageNotFound/PageNotFound";
 import "./App.css";
 import LiftStateExample from "../LiftStateExample/LiftStateExample";
+import Stopwatch from "../Stopwatch/Stopwatch";
 function App() {
   const [reviews, setReviews] = useState([]);
 
@@ -54,6 +55,7 @@ function App() {
           <Route path="mission" element={<SiteMission />} />
         </Route>
         <Route path="/lift-state" element={<LiftStateExample />} />
+        <Route path="/stopwatch" element={<Stopwatch />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </div>
